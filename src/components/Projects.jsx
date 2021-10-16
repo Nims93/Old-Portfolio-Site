@@ -39,8 +39,11 @@ const ProjectsInfo = [
 const Projects = () => {
   return (
     <section id="projects">
+      <div className="wave-container">
+        <WaveSVG />
+      </div>
+      <h2>Projects</h2>
       <div className="projects-internal-wrapper">
-        <h2>Projects</h2>
         <Project
           title={ProjectsInfo[0].title}
           imgSrc={ProjectsInfo[0].imgSrc}
@@ -65,9 +68,6 @@ const Projects = () => {
           srcCodeLink={ProjectsInfo[2].srcCodeLink}
           liveLink={ProjectsInfo[2].liveLink}
         />
-      </div>
-      <div className="wave-container">
-        <WaveSVG />
       </div>
     </section>
   );

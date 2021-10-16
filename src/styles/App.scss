@@ -17,10 +17,18 @@ body {
 }
 
 .App {
+  .spacer {
+    display: flex;
+
+    svg {
+      // aspect-ratio: 900/250;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 section {
-  display: flex;
   div:not(.wave-container) {
     max-width: 1200px;
   }

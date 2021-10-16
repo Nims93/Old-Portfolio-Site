@@ -1,0 +1,18 @@
+#skills {
+  background-color: hsl(336, 100%, 50%);
+  display: flex;
+  justify-content: center;
+
+  .skills-wrapper {
+    width: 90%;
+    text-align: center;
+    position: relative;
+
+    h2 {
+      position: relative;
+      top: -1em;
+      font-size: 4.5em;
+      margin: 0;
+    }
+  }
+}
