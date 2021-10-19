@@ -1,18 +1,232 @@
 #skills {
-  background-color: hsl(336, 100%, 50%);
+  background-color: #ff0066;
+  transform: translateY(-1px);
   display: flex;
   justify-content: center;
 
-  .skills-wrapper {
+  .skills-section-wrapper {
     width: 90%;
     text-align: center;
     position: relative;
 
     h2 {
       position: relative;
-      top: -1em;
       font-size: 4.5em;
       margin: 0;
+
+      @media (min-width: 767px) {
+        // top: -1em;
+        font-size: 16em;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 0.07em;
+        width: 0.8em;
+        background-color: white;
+      }
+    }
+
+    .skills-container {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5em 0;
+
+      @media (min-width: 767px) {
+        margin-bottom: 10em;
+      }
+
+      @media (min-width: 1050px) {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      svg#blobs {
+        display: none;
+
+        // @media (min-width: 1050px) {
+        //   display: initial;
+        //   position: absolute;
+        //   height: 120%;
+        //   width: 120%;
+        //   top: 10%;
+        //   // left: 50%;
+        //   // transform: translate(-50%, -50%);
+        //   // transform: translateX(-50%);
+        // }
+
+        path {
+          fill: #8a0037;
+        }
+      }
+
+      .skills-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & + .skills-group {
+          margin-top: 1.5em;
+
+          // @media (min-width: 767px) {
+          //   margin-top: 0;
+          //   margin-left: 1em;
+          // }
+
+          @media (min-width: 1050px) {
+            margin-left: 4em;
+          }
+        }
+
+        .skill {
+          padding: 0.3em 0;
+          border-radius: 10px;
+          box-shadow: 0px 0px 100px 6px rgba(0, 0, 0, 0.3);
+          background-color: #ece5e5;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          //styling that overrides the stepped mobile view below
+          @media (min-width: 1050px) {
+            // background-color: #ff0066;
+            // color: white;
+            // box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.35);
+            // box-shadow: initial;
+            margin-top: 0em;
+            height: 110px !important;
+            width: 170px !important;
+
+            p {
+              font-size: 1.7em !important;
+            }
+          }
+
+          & + .skill {
+            margin-top: 1.5em;
+
+            // @media (min-width: 767px) {
+            //   margin-top: 1em;
+            // }
+
+            @media (min-width: 1050px) {
+              margin-top: 6em;
+            }
+          }
+
+          svg {
+            height: 70%;
+            width: auto;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      //styling for stepped mobile view
+
+      .skills-group:first-child {
+        #html {
+          width: 210px;
+          height: 70px;
+
+          p {
+            font-size: 1.1em;
+          }
+        }
+      }
+
+      .skills-group:nth-child(2) {
+        #github {
+          width: 240px;
+          height: 80px;
+
+          p {
+            font-size: 1.2em;
+          }
+        }
+
+        #git {
+          width: 270px;
+          height: 90px;
+
+          p {
+            font-size: 1.3em;
+          }
+        }
+      }
+
+      .skills-group:nth-child(3) {
+        #javascript {
+          width: 300px;
+          height: 100px;
+
+          p {
+            font-size: 1.4em;
+          }
+        }
+
+        #react {
+          width: 330px;
+          height: 110px;
+
+          p {
+            font-size: 1.5em;
+          }
+        }
+
+        #python {
+          width: 300px;
+          height: 100px;
+
+          p {
+            font-size: 1.4em;
+          }
+        }
+      }
+
+      .skills-group:nth-child(4) {
+        #css {
+          width: 270px;
+          height: 90px;
+
+          p {
+            font-size: 1.3em;
+          }
+        }
+
+        #sass {
+          width: 240px;
+          height: 80px;
+
+          p {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      .skills-group:last-child {
+        #firebase {
+          width: 210px;
+          height: 70px;
+
+          p {
+            font-size: 1.1em;
+          }
+        }
+      }
     }
   }
 }

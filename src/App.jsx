@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import './styles/App.scss';
 import { ReactComponent as LayeredWaves1SVG } from './assets/layered-waves1.svg';
+import { ReactComponent as LayeredWaves2SVG } from './assets/layered-waves2.svg';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <LayeredWaves1SVG />
       </div>
       <Skills />
+      <div className="spacer layered-waves2">
+        <LayeredWaves2SVG />
+      </div>
     </div>
   );
 }
