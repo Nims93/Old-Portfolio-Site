@@ -16,7 +16,7 @@ const Navbar = (props) => {
           <a href="#skills">Skills</a>
         </li>
         <li className="nav-item">
-          <a href="#about-me">About Me</a>
+          <a href="#about">Contact Me</a>
         </li>
       </ul>
       <div className="wave-container">
