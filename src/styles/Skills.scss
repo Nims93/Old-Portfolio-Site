@@ -15,8 +15,7 @@
       margin: 0;
 
       @media (min-width: 767px) {
-        // top: -1em;
-        font-size: 16em;
+        font-size: 12em;
       }
 
       &:after {
@@ -40,7 +39,7 @@
       padding: 5em 0;
 
       @media (min-width: 767px) {
-        margin-bottom: 10em;
+        margin: 5em 0 14em 0;
       }
 
       @media (min-width: 1050px) {
@@ -48,19 +47,11 @@
         justify-content: center;
       }
 
-      svg#blobs {
-        display: none;
-
-        // @media (min-width: 1050px) {
-        //   display: initial;
-        //   position: absolute;
-        //   height: 120%;
-        //   width: 120%;
-        //   top: 10%;
-        //   // left: 50%;
-        //   // transform: translate(-50%, -50%);
-        //   // transform: translateX(-50%);
-        // }
+      #blobs {
+        position: absolute;
+        height: 120%;
+        width: 120%;
+        top: 1%;
 
         path {
           fill: #8a0037;
@@ -99,11 +90,7 @@
 
           //styling that overrides the stepped mobile view below
           @media (min-width: 1050px) {
-            // background-color: #ff0066;
-            // color: white;
-            // box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.35);
-            // box-shadow: initial;
-            margin-top: 0em;
+            border-radius: 20px;
             height: 110px !important;
             width: 170px !important;
 
@@ -114,10 +101,6 @@
 
           & + .skill {
             margin-top: 1.5em;
-
-            // @media (min-width: 767px) {
-            //   margin-top: 1em;
-            // }
 
             @media (min-width: 1050px) {
               margin-top: 6em;
@@ -134,8 +117,6 @@
           }
         }
       }
-
-      //styling for stepped mobile view
 
       .skills-group:first-child {
         #html {
